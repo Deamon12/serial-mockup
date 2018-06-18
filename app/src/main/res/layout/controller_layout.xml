@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_chevron_left_grey600_24dp"
+            android:rotation="90" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_chevron_left_grey600_24dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/center_circle" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_chevron_left_grey600_24dp"
+            android:rotation="180" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_chevron_left_grey600_24dp"
+            android:rotation="-90" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="32dp"
+        android:columnCount="3"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_minus_grey600_24dp"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zoom" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton_zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_plus_grey600_24dp"
+            android:tint="@android:color/white" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_minus_grey600_24dp"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Focus" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton_focus_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_plus_grey600_24dp" />
+
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
